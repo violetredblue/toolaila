@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+<title>My Portfolio</title>
+  
+<link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        
+<li><a href="#home" onclick="showSection('home')">Home</a></li>
+        
+<li><a href="#about" onclick="showSection('about')">About Me</a></li>
+        
+<li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+        
+<li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+<!-- Home Page -->
+  
+<section id="home" data-section="home" class="content-section">
+    
+<h1>Welcome to our Portfolio</h1>
+    
+
+<p>Hi! I'm a wejdan al-harbi a developer who loves building things on the web with my team shaden al-harbi and shaden al-rshidi wellcome and hello.</p>
+  
+</section>
+
+  <!-- About Me Page -->
+  
+<section id="about" data-section="about" class="content-section">
+    
+
+<h2>About me and my team</h2>
+    
+<img src="m1.jpg" alt="Your Profile Photo" class="profile-photo">
+    
+<img src="m2.jpg" alt="Your Profile Photo" class="profile-photo">
+<img src="m3.jpg" alt="Your Profile Photo" class="profile-photo">
+
+<p>we are a developer with a strong skill set in HTML code,and CSS, and JavaScript codes. I enjoy working on challenging projects and learning new technologies.</p>
+    
+
+<h3>Skills:</h3>
+    
+<ul>
+      
+<li>written a HTML code</li>
+      
+<li>and CSS</li>
+      
+<li>and we help us togther in JavaScript</li>
+      
+<li>devolpment a semple wep</li>
+    
+</ul>
+  </section>
+
+  
+
+<!-- Projects Page -->
+  
+
+<section id="projects" data-section="projects" class="content-section">
+    
+<h2>Projects</h2>
+    <div class="filter-buttons">
+      
+<button onclick="filterProjects('all')">All</button>
+      
+<button onclick="filterProjects('web')">Web Development</button>
+      
+<button onclick="filterProjects('mobile')">Mobile Apps</button>
+    </div>
+    
+<div id="project-list">
+      <div class="project" data-category="web">
+        
+<h3>Project 1 - Web App</h3>
+        <p>A web app for managing tasks.</p>
+        
+        
+<a href="https://github.com/violetredblue/violet">GitHub</a>
+      </div>
+      
+
+<div class="project" data-category="mobile">
+        
+<h3>Project 2 - Mobile App</h3>
+        
+<p>A mobile app for tracking fitness activities.</p>
+        
+
+        
+<a href="https://github.com/violetredblue/violet">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  
+<section id="contact" data-section="contact" class="content-section">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      
+<label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      
+<input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 w.sh.sh. All rights reserved.</p>
+    
+<div class="social-links">
+      <a href="https://github.com/violetredblue/violet" target="_blank">GitHub</a>
+      
+    
+</div>
+  </footer>
+</body>
+
+</html>

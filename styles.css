@@ -1,0 +1,127 @@
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+#home {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#about {
+  background-color: #e4e4e4;
+}
+
+.profile-photo {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#projects .filter-buttons {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#projects .filter-buttons button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.project {
+  background-color: #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin-top: 10px;
+}
+
+#contact input, #contact textarea, #contact button {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+#contact button 
+{
+  margin-top: 15px;
+  cursor: pointer;
+}
+footer{
+background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #ff8c00; /* Change this color to whatever suits your design */
+}
+/* Hide all sections initially */
+.content-section {
+  display: none;
+  padding: 20px;
+}
+
+/* Show the section when active */
+.content-section.active {
+  display: block;
+}
+
+}
